@@ -33,6 +33,7 @@ color:white;
 <body>
 <script src="https://www.google.com/recaptcha/api.js"></script>
 <div class="header-top">
+  <img src="https://static.wixstatic.com/media/fa0608_3ad0b198693f45c6a03a7eec40cd696d~mv2.png/v1/fill/w_744,h_618,al_c,lg_1,q_90/Untitled%20(1).webp">
 <h1 class="white-header" id="cool-header-top">America's #1 Social Network, Sell, Post, Upload, and more.</h1>
 <a href="#about-us">Click here to go to about us.</a>
 <p class="white-header"><?php echo date(m, d, y) ?>
