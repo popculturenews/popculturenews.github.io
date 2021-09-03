@@ -1,114 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Pop Culture News</title>
+<title>Digital World - Social Network</title>
 <style>
-.main-invitation{
-background-color:rgb(22, 119, 230);
+.white-header{
+color:rgb(237, 245, 244);
+}
+.header-top{
+background-color:rgb(18, 14, 10);
+}
+body{
+background-color:rgb(14, 231, 235);
+}
+.form-one{
+background-color:rgb(235, 66, 14);
 }
 a:hover{
 background-color:rgb(236, 22, 22);
 }
-.header-top{
-background-color:rgb(236, 22, 22);
+.form-two{
+background-color:rgb(20, 122, 6);
 }
-body{
-background-color:rgb(245, 107, 15);
-}
-.footer{
-background-color:rgb(23, 2, 2);
-}
-.footer-paragraph{
+.account{
+background-color:rgb(19, 11, 179);
+height:50px;
+width:332px;
 color:white;
-}
-.footer-header{
-color:white;
-}
-.shortcuts{
-background-color:rgb(43, 227, 77);
-}
-.page-link{
-font-size:70px;
 }
 </style>
 </head>
 <body>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 <div class="header-top">
-<img src="https://static.wixstatic.com/media/f5f88e_e3f229dcc758455da6aed9e1e68167b2~mv2.png/v1/fill/w_450,h_450,al_c,lg_1,q_85/Saul%20Website%20Logo.webp" alt="Logo For This Webpage" height="70" width="70">
-<a class="page-link" href="https://popculturenews.github.io">Home</a>
-<a class="page-link" href="file:///C:/Users/saulh/Desktop/www.onscreen.html">On Screen</a>
-<a class="page-link" href="file:///C:/Users/saulh/Desktop/www.artsandentertainment.html">Arts and Entertainment</a>
-<a class="page-link" href="file:///C:/Users/saulh/Desktop/www.literature.html">Literature</a>
-<br>
-
-<div class="gcse-search"></div>
- </div>
-<div class="shortcuts">
-<ul>
-<li><a href="#about-us">Click here to go to About Us</a></li>
-<li><a href="#good-music-genres">Click here to go to What genres of music we focus on most</a></li>
-<li><a href="#popular-books">Click here to go to What Books We Focus Most On</a></li>
-<li><a href="#good-books">Click here to go to Our Favorite Books</a></li>
-<li><a href="#favorite-genres">Click here to go to Our Favorite Book Genres</a></li>
-<li><a href="#spotify-play">Click here to view my Spotify Playlist</a></li>
-<li><a href="#spotify-icon">Click here to view my Spotify Profile</a></li>
-<li><a href="#goodreads-icon">Click here to view my Goodreads Profile</a></li>
-<li><a href="#great-songs">Click here to go to Ten New Song Reccomendations from February</a></li>
-</ul>
+<h1 class="white-header" id="cool-header-top">America's #1 Social Network, Sell, Post, Upload, and more.</h1>
+<a href="#about-us">Click here to go to about us.</a>
+<p class="white-header"><?php echo date(m, d, y) ?>
 </div>
-<div class="main-invitation">
-<h1 id="about-us">About Us</h1>
-<p>Welcome To Pop Culture News, a new news service trying to keep you up to date.</p>
-<h2 id="good-music-genres">What genres of music we focus on most.</h2>
-<ol>
-<li>Pop</li>
-<li>EDM</li>
-<li>Country</li>
-<li>Hip-Hop</li>
-</ol>
-<h2 id="popular-books">What Books We Focus Most On</h2>
-<ol>
-<li>Harry Potter</li>
-<li>The Hunger Games</li>
-<li>Diary of A Wimpy Kid</li>
-</ol>
-<h2 id="good-books">Our Favorite Books</h2>
-<ol>
-<li>The Hunger Games</li>
-<li>The Giver</li>
-<li>Johnny Tremain</li>
-<li>Lord of The Flies</li>
-</ol>
-<h2 id="favorite-genres">Our Favorite Book Genres</h2>
-<ol>
-<li>Young Adult</li>
-<li>Historical Fiction</li>
-</ol>
-<h2 id="spotify-play">Spotify Playlist</h2>
-<iframe src="https://open.spotify.com/embed/playlist/1LZSrGYC9UHk18SVwnq9se" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-<h2 id="spotify-icon">Spotify Profile</h2>
-<a href="spotify:user:saulhirshberg11">Click here to view my Spotify Profile</a>
-<h2 id="goodreads-icon">Goodreads Profile</h2>
-<a href="https://www.goodreads.com/user/show/115063271-saul-hirshberg">Click here to view my Goodreads Profile</a>
-<h1 id="great-songs">Ten New Song Reccomendations from February</h1>
-<ol>
-<li>Taylor Swift - Love Story (Taylor's Version)</li>
-<li>Sia f/David Guetta - Floating Through Space</li>
-<li>Dan + Shay - Glad You Exist</li>
-<li>Daya - Bad Girl</li>
-<li>Dua Lipa - We're Good</li>
-<li>Sam Fischer f/Demi Lovato - What Other People Say</li>
-<li>Tank - Can't Let It Show</li>
-<li>Garth Brooks f/Trisha Yearwood - Shallow (Duet)</li>
-<li>AJR - Way Less Sad</li>
-<li>Eric Church - Heart On Fire</li>
-</ol>
+<div class="form-one" id="cool-form-one">
+<form action="http://localhost/www.login.php" method="post">
+<h2 class="white-header">Log In</h2>
+<a href="#cool-header-top">Home</a> <br>
+<a href="#cool-form-two">Don't Have An Account? Sign Up!</a> <br>
+<h2 class="white-header">Please write your Email or Username.</h2> <br>
+<input type="text" name="email-or-username-one" placeholder="Email or Username" required>
+<h2 class="white-header">Please write your phone number.</h2>
+<input type="text" name="phone-number-one" placeholder="Phone Number" required>
+<h2 class="white-header">Please write your Password.</h2> <br>
+<input type="password" name="password-one"placeholder="Password" required>
+<h2 class="white-header">Pick your profile picture.</h2> <br>
+<input type="file" name="ProfilePhoto-one"> <br>
+<h2 class="white-header">Give a description of your career or hobbies.</h2>
+<textarea name="description-one" placeholder="Description" required></textarea> 
+<h2 class="white-header">When were you born?</h2> <br>
+<input type="date" name="birthday" placeholder="Birthday" required> <br>
+<h2 class="white-header">Which gender are you?</h2> <br>
+<h2 class="white-header">Male:</h2>
+<input type="radio" name="gender-questions" required>
+<h2 class="white-header">Female:</h2>
+<input type="radio" name="gender-questions" required>
+<h2 class="white-header">Non-binary</h2>
+<input type="radio" name="gender-questions" required> <br>
+<h2 class="white-header">I'm Not A Robot</h2> <br>
+<input type="radio" name="robot-questions" required> <br>
+<button class="account" type="submit" name="submit">Log In</button>
+</form>
 </div>
-<div class="footer">
-<h2 class="footer-header">Total Views For This Site</h2>
-<div align=center><img src='https://www.counter12.com/img-d7ax85W3CAAWd48A-91.gif' border='0' alt='web counter'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=d7ax85W3CAAWd48A'></script></div>
-<p class="footer-paragraph">Copyright 2021 by Saul Hirshberg</p>
+<div class="form-two" id="cool-form-two">
+<form action="http://localhost/www.signup.php" method="post">
+<h2 class="white-header">Sign Up</h2>
+<a href="#cool-header-top">Home</a> <br>
+<a href="#cool-form-one">Already Have an Account? Log In!</a> <br>
+<h2 class="white-header">Please write your Email.</h2> <br>
+<input type="email" name="email-two" placeholder="Email" required>
+<h2 class="white-header">Please write your Username.</h2> <br>
+<input type="text" name="username-two" placeholder="Username" required>
+<h2 class="white-header">Please write your phone number.</h2>
+<input type="text" name="phone-number-two" placeholder="Phone Number" required>
+<h2 class="white-header">Please write your Password.</h2> <br>
+<input type="password" name="password-two" placeholder="Password" required>
+<h2 class="white-header">Pick your profile picture.</h2> <br>
+<input type="file" name="ProfilePhoto-two"> <br>
+<h2 class="white-header">Give a description of your career or hobbies.</h2>
+<textarea name="description-two" placeholder="Description" required></textarea>
+<h2 class="white-header">When were you born?</h2> <br>
+<input type="date" name="birthday-two" placeholder="Birthday" required>
+<h2 class="white-header">Which gender are you?</h2> <br>
+<h2 class="white-header">Male:</h2>
+<input type="radio" name="gender-questions-two" required>
+<h2 class="white-header">Female:</h2>
+<input type="radio" name="gender-questions-two" required>
+<h2 class="white-header">Non-binary</h2>
+<input type="radio" name="gender-questions-two" required> <br>
+<h2 class="white-header">I'm Not A Robot</h2> <br>
+<input type="radio" name="robot-questions-two" required> <br>
+<button class="account" type="submit" name="submit-two">Sign Up</button>
+</form>
+</div>
+<div id="about-us">
+<a href="#cool-header-top">Home</a> <br>
+<h1>We are Saul Hirshberg and Jacob Rhodes we made this for you.</h1>
+<h1>
+Three reasons why we made this app!
+</h1>
+<ol>
+<li>Because we know this will be a big hit.</li>
+<li>Because we wanted to have some fun and see how skilled we are.</li>
+<li>Because we wanted something new.</li>
+<li>because we want you to have a platform for you to communicate.</li>
+</ol>
+</h1>
+<h1>For more personal info about this site's founders. Click on the links below.</h1>
+<a href="file:///C:/Users/saulh/Desktop/www.about-saul.html">Saul Hirshberg</a> <br>
+<a href="file:///C:/Users/saulh/Desktop/www.about-jake.html">Jacob Rhodes</a> 
 </div>
 </body>
 </html>
