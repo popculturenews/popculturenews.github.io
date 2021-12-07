@@ -10,7 +10,61 @@ background-color:orange;
 </head>
 <body>
 <h1 class="">Saul H's Top Top 40 Mainstream Songs of 2017</h1>
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTGp3qJ7qkOlHmbLL4uAMtfL-ZYKHRtZirDcL3e0Vircbu39XPiVYCL4TVDFouXT35tnVUYM4m4etEI/pubhtml?widget=true&amp;headers=false"></iframe>
-<iframe src="https://open.spotify.com/embed/playlist/2s4gtNQGQPpLQCcAVD3YdJ?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+<table>
+<thead>
+  <tr>
+    <th>Rank</th>
+    <th>Artist</th>
+    <th>Title</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>1</td>
+    <td>Luis Fonsi</td>
+    <td>Despacito f/Justin Bieber & Daddy Yankee</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Chris Lake</td>
+    <td>I Want You</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Taylor Swift</td>
+    <td>End Game f/Ed Sheeran & Future</td>
+  </tr>
+  <tr>
+  <td>4</td>
+  <td>Camila Cabello</td>
+  <td>Havana f/Young Thug</td>
+  </tr>
+  <tr>
+  <td>5</td>
+  <td>Lorde</td>
+  <td>Green Light</td>
+  </tr>
+  <tr>
+  <td>6</td>
+  <td>BTS</td>
+  <td>DNA</td>
+  </tr>
+  <tr>
+  <td>7</td>
+  <td>Kelly Clarkson</td>
+  <td>Love So Soft</td>
+  </tr>
+  <tr>
+  <td>8</td>
+  <td>Tune-Yards</td>
+  <td>ABC-123</td>
+  </tr>
+  <tr>
+  <td>9</td>
+  <td>Litany</td>
+  <td>Bedroom</td>
+  </tr>
+</tbody>
+</table>
 </body>
 </html>
