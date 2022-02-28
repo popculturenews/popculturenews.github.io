@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
     <style>
-    </style>
-    <script>
       .header1 {
        background-color:black;
         float:left;
@@ -20,6 +18,8 @@
       a:hover {
         color:white;
       }
+    </style>
+    <script>
     </script>
   </head>
   <body>
@@ -29,5 +29,9 @@
     <div class="header2">
       <a onclick="alert('Stats are coming soon! Though, they are currently unavailable.')"></a>
     </div>
+    <input type="text" id="genrebox" placeholder="This is for the genre.">
+    <input type="button" value="Submit" onclick="genreSubmit();">
+    <input type="text" id="decadebox" placeholder="This is for the decade.">
+    <input type="button" value="Submit" onclick="decadeSubmit();"
   </body>
 </html>
