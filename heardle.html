@@ -37,6 +37,54 @@
       }
     </style>
     <script>
+      function decadesaveList() {
+        localStorage.storedList = document.getElementById("decadelist").innerHTML;  
+      }
+      function decadeloadList() {
+        document.getElementById("decadelist").innerHTML = localStorage.storedList;
+      }
+      function decadeSubmit() {
+        var newItem = document.createElement("div");
+        newItem.innerHTML = document.getElementById("decadebox").value;
+        document.getElementById("decadelist").appendChild(newItem);
+        decadesaveList();
+      }
+      function genresaveList() {
+        localStorage.storedList = document.getElementById("genrelist").innerHTML;  
+      }
+      function genreloadList() {
+        document.getElementById("genrelist").innerHTML = localStorage.storedList;
+      }
+      function genreSubmit() {
+        var newItem = document.createElement("div");
+        newItem.innerHTML = document.getElementById("genrebox").value;
+        document.getElementById("genrelist").appendChild(newItem);
+        genresaveList();
+      }
+      function artistsaveList() {
+        localStorage.storedList = document.getElementById("artistlist").innerHTML;  
+      }
+      function artistloadList() {
+        document.getElementById("artistlist").innerHTML = localStorage.storedList;
+      }
+      function artistSubmit() {
+        var newItem = document.createElement("div");
+        newItem.innerHTML = document.getElementById("artistbox").value;
+        document.getElementById("artistlist").appendChild(newItem);
+        artistsaveList();
+      }
+       function titlesaveList() {
+        localStorage.storedList = document.getElementById("titlelist").innerHTML;  
+      }
+      function titleloadList() {
+        document.getElementById("titlelist").innerHTML = localStorage.storedList;
+      }
+      function titleSubmit() {
+        var newItem = document.createElement("div");
+        newItem.innerHTML = document.getElementById("titlebox").value;
+        document.getElementById("titlelist").appendChild(newItem);
+        titlesaveList();
+      }
     </script>
   </head>
   <body>
@@ -56,22 +104,39 @@
     <br>
     <div class="input1">
     <input type="text" id="decadebox" placeholder="This is for the decade.">
-    <input type="button" value="Submit" onclick="decadeSubmit();">
+      <input type="button" value="Submit" onclick="decadeSubmit();">
+      <div id="decadelist"></div>
     </div>
     <div class="input2">
     <input type="text" id="genrebox" placeholder="This is for the genre.">
     <input type="button" value="Submit" onclick="genreSubmit();">
+      <div id="genrelist"></div>
     </div>
+     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>
     <div class="input3">
     <input type="text" id="artistbox" placeholder="This is for the artist.">
     <input type="button" value="Submit" onclick="artistSubmit();">
+      <div id="artistlist"></div>
     </div>
     <div class="input4">
     <input type="text" id="titlebox" placeholder="This is for the title.">
-    <input type="button" value="Submit" onclick="titleSubmit();"
+    <input type="button" value="Submit" onclick="titleSubmit();">
+      <div id="titlelist"></div>
     </div>
   </body>
 </html>
