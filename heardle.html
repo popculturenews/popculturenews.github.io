@@ -48,7 +48,14 @@
         newItem.innerHTML = document.getElementById("decadebox").value;
         document.getElementById("decadelist").appendChild(newItem);
         decadesaveList();
-      }
+        var checkDecade = document.getElementById("decadelist");
+        var decadeCheck = checkDecade.value;
+        if (decadeCheck == "1990's") {
+          alert("Woah! Correct!");
+          return true;
+        } 
+        return false;
+      } 
       function genresaveList() {
         localStorage.storedList = document.getElementById("genrelist").innerHTML;  
       }
@@ -60,6 +67,13 @@
         newItem.innerHTML = document.getElementById("genrebox").value;
         document.getElementById("genrelist").appendChild(newItem);
         genresaveList();
+        var checkGenre = document.getElementById("genrelist");
+        var genreCheck = checkGenre.value;
+        if (genreCheck == "Hip-Hop/Rap") {
+          alert("Woah! Correct!");
+          return true;
+        } 
+        return false;
       }
       function artistsaveList() {
         localStorage.storedList = document.getElementById("artistlist").innerHTML;  
@@ -72,6 +86,13 @@
         newItem.innerHTML = document.getElementById("artistbox").value;
         document.getElementById("artistlist").appendChild(newItem);
         artistsaveList();
+        var checkArtist = document.getElementById("artistlist");
+        var artistCheck = checkArtist.value;
+        if (artistCheck == "Sir Mix-A-Lot") {
+          alert("Woah! Correct!");
+          return true;
+        } 
+        return false;
       }
        function titlesaveList() {
         localStorage.storedList = document.getElementById("titlelist").innerHTML;  
@@ -84,12 +105,19 @@
         newItem.innerHTML = document.getElementById("titlebox").value;
         document.getElementById("titlelist").appendChild(newItem);
         titlesaveList();
+        var checkTitle = document.getElementById("titlelist");
+        var titleCheck = checkTitle.value;
+        if (titleCheck == "Baby Got Back") {
+          alert("Woah! Correct!");
+          return true;
+        } 
+        return false;
       }
     </script>
   </head>
   <body>
     <div class="header1">
-     <a href="" onclick="alert('Guess the HEARDLE in as least tries as possible. Each guess must be a valid artist/genre/decade/song. All guesses will be displayed under the box, though if your answer is correct, you will be allerted. Examples: If you guessed the Decade 2010's, along with the genre Hip-Hop/Rap, the artist Jack Harlow, and the title WHAT'S POPPIN, you would be correct. Special Rules: You may not include featured artists in your artist/title. Any one artist has ownership of a song that they are featured in. For example, you would not do Daddy Yankee & Luis Fonsi - Despacito, or Luis Fonsi - Despacito f/Daddy Yankee. You would do Luis Fonsi - Despacito, or Daddy Yankee - Despacito. Genres include: Top 40/Pop, Hip Hop/Rap, Country, Rock - includes genres such as Metal, Rock n' Roll, etc., Dance/Electronic, Alternative, AC - includes genres such as Hot AC etc., Techno, Disco, Motown, Folk, Soul, Jazz, Blues, Gospel, Christian - includes genres such as Christian Impressions etc., Spanish Contemporary, Regional Mexican')">Stats</a> 
+     <a href="" onclick="alert('Guess the HEARDLE in as least tries as possible. Each guess must be a valid artist/genre/decade/song. All guesses will be displayed under the box, though if your answer is correct, you will be allerted. Examples: If you guessed the Decade 2010's, along with the genre Hip-Hop/Rap, the artist Jack Harlow, and the title WHAT'S POPPIN, you would be correct. Special Rules: You may not include featured artists in your artist/title. Any one artist has ownership of a song that they are featured in. For example, you would not do Daddy Yankee & Luis Fonsi - Despacito, or Luis Fonsi - Despacito f/Daddy Yankee. You would do Luis Fonsi - Despacito, or Daddy Yankee - Despacito. Genres include: Top 40/Pop, Hip Hop/Rap, Country, Rock - includes genres such as Metal, Rock n' Roll, etc., Dance/Electronic, Alternative, AC - includes genres such as Hot AC etc., Techno, Disco, Motown, Folk, Soul, Jazz, Blues, Gospel, Christian - includes genres such as Christian Impressions etc., Spanish Contemporary, Regional Mexican. A new HEARDLE will be available each day. The HEARDLE will be updated between 7:00 AM and 7:00 AM')">Stats</a> 
     </div>
     <div class="header2">
       <a href="" onclick="alert('Stats are coming soon! Though, they are currently unavailable.')">Stats</a>
