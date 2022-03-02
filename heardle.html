@@ -89,7 +89,7 @@
   </head>
   <body>
     <div class="header1">
-      <a href="" onclick="alert('Guess the HEARDLE in as least tries as possible. This is a WORDLE inspired game referring to music. Rules: There will be 4 sections that you will need to guess in. These titles will be Decade, Genre, Artist, and Title. I recommend guessing in the order provided. If your guess is correct, the Genre, Artist etc. below will turn Green. The Decade and Genre inputs do not result in changes of Stats, though you will have to guess all titles to complete the game. For example, if you correctly guessed the decade. In this case, it would be 2020's, you would move on to the genre. If you had guessed the genre, in this case it would be Hip-Hop/Rap, correctly, you would then move on to the artist. If you guessed the artist, in this case Jack Harlow, correct, you would move on to the title. If you guessed the title in this case WHAT'S POPPIN, correct, you would then be finished with the game. As we can not provide multiple options of artist and title formatting, you will have to write, without typo's and/or errors, one artist. You will not include featured artists. For example, you may not include Luis Fonsi and Daddy Yankee as an artist. Any featured artist will count as an artist of a song, nor you should you ever include featured artists in titles of songs. For example, you would never include Despacito f/Daddy Yankee as a title, as a featured artist is included. All genres listed: Top 40/Pop, Hip-Hop/Rap, Dance/Electronic, Rock. Please note: Rock includes all forms of rock, Hard Rock, Rock n' Roll, Metal etc.,Country, Alternative, Gospel, Christian, AC, Hot AC, Regional Mexican, Spanish, R&B, Folk, Jazz, Soul, Techno.')">Instructions</a>
+      <a href="" onclick="alert('<a href="" onclick="alert('Stats are coming soon! Though, they are currently unavailable.')">Stats</a>')">Stats</a>
     </div>
     <div class="header2">
       <a href="" onclick="alert('Stats are coming soon! Though, they are currently unavailable.')">Stats</a>
@@ -111,6 +111,20 @@
     <input type="text" id="genrebox" placeholder="This is for the genre.">
     <input type="button" value="Submit" onclick="genreSubmit();">
       <div id="genrelist"></div>
+        <script>
+        if (localStorage.storedList) {
+          decadeloadList();
+        }
+        if (localStorage.storedList) {
+          genreloadList();
+        }
+        if (localStorage.storedList) {
+          artistloadList();
+        }
+        if (localStorage.storedList) {
+          titleloadList();
+        }
+      </script>
     </div>
      <br>
     <br>
