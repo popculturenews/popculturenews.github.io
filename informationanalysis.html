@@ -27,28 +27,31 @@ body {
     <br>
     <br>
     <div class="signup">
-      <form>
-        <input type="text" placeholder="Username" required>
+      <form action="" method="post">
+        <input type="text" placeholder="Username" name="username" required>
         <br>
         <br>
-        <input type="text" placeholder="Full Name" required>
+        <input type="text" placeholder="Full Name" name="name" required>
         <br>
         <br>
-        <input type="text" placeholder="Password" required>
+        <input type="text" placeholder="Password" name="password" required>
         <br>
         <br>
-        <input type="date" placeholder="Date Of Birth" required>
+        <input type="date" placeholder="Date Of Birth" name="birth" required>
         <br>
         <br>
+        <input type="text" placeholder="Email" name="email" required>
+        <br>
+        <br>
+        <input type="text" placeholder="Address" name="address" required>
         <p>Gender</p>
-        <br>
-        <br>
         <p>Male</p>
-        <input type="radio">
+        <input type="radio" name="genderone">
         <p>Female</p>
-        <input type="radio">
+        <input type="radio" name="gendertwo">
         <p>Nonbinary</p>
-        <input type="radio">
+        <input type="radio" name="genderthree">
+        <button type="submit" name="submit">Sign In</button>
       </form>
     </div>
   </body>
