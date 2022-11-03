@@ -19,6 +19,8 @@ body {
     <?php echo $_GET["birth"]; ?><br>
     <?php echo $_GET["email"]; ?><br>
     <?php echo $_GET["address"]; ?><br>
+    <?php echo $_GET["number"]; ?><br>
+    <?php echo $_GET["description"]; ?><br>
     <?php echo $_GET["genderone"]; ?><br>
     <?php echo $_GET["gendertwo"]; ?><br>
     <?php echo $_GET["genderthree"]; ?><br>
