@@ -13,16 +13,14 @@ body {
   </head>
   <body>
     <p>Current Profile</p>
-    <?php echo $_GET["username"]; ?><br>
-    <?php echo $_GET["name"]; ?><br>
-    <?php echo $_GET["password"]; ?><br>
-    <?php echo $_GET["birth"]; ?><br>
-    <?php echo $_GET["email"]; ?><br>
-    <?php echo $_GET["address"]; ?><br>
-    <?php echo $_GET["number"]; ?><br>
-    <?php echo $_GET["description"]; ?><br>
-    <?php echo $_GET["genderone"]; ?><br>
-    <?php echo $_GET["gendertwo"]; ?><br>
-    <?php echo $_GET["genderthree"]; ?><br>
+    <?php echo $_POST["username"]; ?><br>
+    <?php echo $_POST["name"]; ?><br>
+    <?php echo $_POST["password"]; ?><br>
+    <?php echo $_POST["birth"]; ?><br>
+    <?php echo $_POST["email"]; ?><br>
+    <?php echo $_POST["address"]; ?><br>
+    <?php echo $_POST["number"]; ?><br>
+    <?php echo $_POST["description"]; ?><br>
+    <?php echo $_POST["gender"]; ?><br>
   </body>
 </html>
