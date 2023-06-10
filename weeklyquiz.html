@@ -52,20 +52,23 @@
   <br>
   <p>What is the official scientific classification of modern humans?</p>
   <input type="text" id="test">
-  <input type="button" id="button">
+  <br>
+  <br>
+  <input type="button" id="button" placeholder="Button">
   <p id="answer"></p>
   <script>
     var whenButton = document.getElementById("button");
-    var answerDisplay = document.getElementById("answer");
     var onHit = function() {
+      var solution;
     var test = document.getElementById("test").value;
     if (test = "Homo sapiens sapiens") {
-      answerDisplay.textContent = "Correct!"
+      solution.textContent="Correct!";
     } else {
-      answerDisplay.textContent = "Oops! The answer was Homo sapiens sapiens!"
+      solution.textContent="Oops! The answer was 'Homo sapiens sapiens'";
     }
-      whenButton.addEventListener("click", onHit);
-    }
+      document.getElementById("answer").textContent = solution;
+    };
+    whenButton.addEventListener("click", onHit);
   </script>
   </body>
 </html>
