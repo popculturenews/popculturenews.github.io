@@ -50,15 +50,21 @@
   <br>
   <br>
   <br>
-  <input type="text" id="test" placeholder="What is the official scientific classification of modern humans?">
+  <p>What is the official scientific classification of modern humans?</p>
+  <input type="text" id="test">
+  <input type="button" id="button">
   <p id="answer"></p>
   <script>
-    var test = document.getElementById("test");
+    var whenButton = document.getElementById("button");
     var answerDisplay = document.getElementById("answer");
+    var onHit = function() {
+    var test = document.getElementById("test").value;
     if (test = "Homo sapiens sapiens") {
-      answerDisplay.innerHTML = "Correct!"
+      answerDisplay.textContent = "Correct!"
     } else {
-      answerDisplay.innerHTML = "Oops! The answer was Homo sapiens sapiens!"
+      answerDisplay.textContent = "Oops! The answer was Homo sapiens sapiens!"
+    }
+      whenButton.addEventListener("click", onHit);
     }
   </script>
   </body>
