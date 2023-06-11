@@ -3,6 +3,7 @@
 <head>
   <title>Online Radio & Music w/Saul H.</title>
   <meta charset-"utf-8">
+  //Conducting CSS
   <style>
     .header1 {
       float:left;
@@ -56,13 +57,14 @@
   <div class="spotify">
     <h1 id="linksone">Links And More</h1>
   <ul>
+    //Creating List w/Links
   <li><a id="one"href="https://open.spotify.com/artist/1nSde4Bq8l3U4Uix3N2bnZ?si=Jo97WJUwRvGXXC5qPj1CSA">Saul H. - Spotify Artist Profile</a></li>
   <li><a id="two"href="https://open.spotify.com/user/saulhirshberg11?si=6713e025f9784b0d">Saul H. - Spotify Profile</a></li>
   <li><a id="three"href="https://pulsemusic.proboards.com/user/18496">Saul H. - Pulse Music</a></li>
   <li><a id="four"href="top20two.html">Pulse Thread - Saul H.'s Top 20</a></li>
     <li><a id="five" href="https://pulsemusic.proboards.com/thread/214331/saul-top-20-current-estimates">Pulse Thread - Saul H.'s Spotify Playlists</a></li>
     <li><a id="six" href="top20.html">Crownnote - Saul H.'s Top 20 (Current Estimates)</a></li>
-    <li><a id="seven" href="book.html">Going About In A Society Where Whippersnappers Are The Most Prominent Individuals</a></li>
+    <li><a id="seven" href="book.html">Going About Life In A Society Where Whippersnappers Are The Most Prominent Individuals</a></li>
     <li><a Id="eight" href="poemarchives.html">2023 Poem Archives</a></li>
   </ul>
   </div>
@@ -75,30 +77,127 @@
   <br>
   <br>
    <div class="charts">
+     //Creating List w/Charts
      <h1>Saul H.'s Favorite Songs By Year</h1>
-       <li><a href="2017songs.html">2017 - Saul H.'s Top Songs</a></li>
-      <li><a href="2018songs.html">2018 - Saul H.'s Top Songs</a></li>
-      <li><a href="2019songs.html">2019 - Saul H.'s Top Songs</a></li>
-      <li><a href="2010'ssongs.html">2010's - Saul H.'s Top Songs</a></li>
-      <li><a href="2020songs.html">2020 - Saul H.'s Top Songs</a></li>
-      <li><a href="2021songs.html">2021 - Saul H.'s Top Songs</a></li>
-      <li><a href="2022songs.html">2022 - Saul H.'s Top Songs</a></li>
+      <li><a id="twentyseven" href="2017songs.html">2017 - Saul H.'s Top Songs</a></li>
+      <li><a id="twentyeight" href="2018songs.html">2018 - Saul H.'s Top Songs</a></li>
+      <li><a id="twentynine" href="2019songs.html">2019 - Saul H.'s Top Songs</a></li>
+      <li><a id="twentyten" href="2010'ssongs.html">2010's - Saul H.'s Top Songs</a></li>
+      <li><a id="twenty" href="2020songs.html">2020 - Saul H.'s Top Songs</a></li>
+      <li><a id="twentyone" href="2021songs.html">2021 - Saul H.'s Top Songs</a></li>
+      <li><a id="twentytwo" href="2022songs.html">2022 - Saul H.'s Top Songs</a></li>
     </div>
-  
-  <p>Choose Your Language:</p>
+ <p id="langparagraph">Choose Your Language:</p>
   <br>
   <select id="lang">
-    <option value="en" id="buttone">English</option>
-    <option value="es" id="buttons">Espanol</option>
-    <option value="ma" id="buttonm">Mandarin</button>
+    <option value="en">English</option>
+    <option value="es">Espanol</option>
+    <option value="ma">Mandarin</button>
   </select>
 <br>
-  <input type="submit">
+  <input type="submit" id=”submitone”>
   </ul>
   <br>
-  <p>ⓒ2022 by Saul Hirshberg; All rights reserved.</p>
-  <script>
-  </script>
+<p id="allrightsreserved">ⓒ2023 by Saul Hirshberg; All rights reserved.</p>
+// All Rights Reserved
+//Author: Saul Hirshberg
+//addEventListener will conduct coolL.
+<script>
+console.log()
+var submitone = document.getElementById(“submitone”);
+    var coolL = function() {
+ var lang = document.getElementById("lang").value;
+ var radio = document.getElementById("radio");
+    var songsone = document.getElementById("songsone");
+    var views = document.getElementById("views");
+    var linksone = document.getElementById("linksone");
+    var one = document.getElementById("one");
+    var two = document.getElementById("two");
+    var three = document.getElementById("three");
+    var four = document.getElementById("four");
+    var five = document.getElementById("five");
+    var six = document.getElementById("six");
+    var seven = document.getElementById("seven");
+    var eight = document.getElementById("eight");
+      var twentyseven = document.getElementById("twentyseven");
+      var twentyeight = document.getElementById("twentyeight");
+      var twentynine = document.getElementById("twentynine");
+      var twentyten = document.getElementById("twentyten");
+      var twenty = document.getElementById("twenty");
+      var twentyone = document.getElementById("twentyone");
+      var twentytwo = document.getElementById("twentytwo");
+      var langparagraph = document.getElementById("langparagraph");
+      var rights = document.getElementById("allrightsreserved");
+      if (lang === "es") {
+        radio.textContent = "Radio Y Música En Línea Con Saul H.";
+        songsone.textContent = "Música De Saúl H.";
+        views.textContent = "Vistas Totales Para Este Sitio:";
+        linksone.textContent = "Enlaces Y Más";
+        one.textContent = "Saul H. - Perfil De Artista De Spotify";
+        two.textContent = "Saul H. - Perfil De Spotify";
+        three.textContent = "Saul H. - Legumbres Musica";
+        four.textContent = "Pulse Thread - Los 20 Mejores De Saul H.";
+        five.textContent = "Pulse Thread - Listas De Reproducción De Spotify De Saul H.";
+        six.textContent = "Crownnote - Los 20 Mejores De Saul H. (Estimaciones Actuales)";
+        seven.textContent = "Ir Por La Vida En Una Sociedad Donde Los Whippersnappers Son Los Individuos Más Prominentes";
+        eight.textContent = "Archivos De Poemas 2023";
+        twentyseven.textContent = "2017 - Las Mejores Canciones De Saul H.";
+        twentyeight.textContent = "2018 - Las Mejores Canciones De Saul H.";
+        twentynine.textContent = "2019 - Las Mejores Canciones De Saul H.";
+        twentyten.textContent = "2010's - Las Mejores Canciones De Saul H.";
+        twenty.textContent = "2020 - Las Mejores Canciones De Saul H.";
+        twentyone.textContent = "2021 - Las Mejores Canciones De Saul H.";
+        twentytwo.textContent = "2022 - Las Mejores Canciones De Saul H.";
+        langparagraph.textContent = "Elige Tu Idioma:";
+        rights.textContent = "ⓒ2022 De Saul Hirshberg; Reservados Todos Los Derechos.";
+      } else if (lang === "ma") {
+        radio.textContent = "在线电台 w/Saul H.";
+        songsone.textContent = "索尔·H 的音乐";
+        views.textContent = "本网站的总浏览量：";
+        linksone.textContent = "链接和更多";
+        one.textContent = "Saul H. - Spotify 艺术家简介";
+        two.textContent = "Saul H. - Spotify 个人资料";
+        three.textContent = "扫罗 H. - 脉冲音乐";
+        four.textContent = "脉冲线 - Saul H. 的前 20 名";
+        five.textContent = "Pulse Thread - Saul H. 的 Spotify 播放列表";
+        six.textContent = "Crownnote - Saul H. 的前 20 名（当前估计）";
+        seven.textContent = "在一个以鞭打者为最突出个体的社会中生活";
+        eight.textContent = "2023 诗歌档案馆";
+        twentyseven.textContent = "2017 - Saul H. 的热门歌曲";
+        twentyeight.textContent = "2018 - Saul H. 的热门歌曲";
+        twentynine.textContent = "2019 - Saul H. 的热门歌曲";
+        twentyten.textContent = "2010's - Saul H. 的热门歌曲";
+        twenty.textContent = "2020 - Saul H. 的热门歌曲";
+        twentyone.textContent = "2021 - Saul H. 的热门歌曲";
+        twentytwo.textContent = "2022 - Saul H. 的热门歌曲";
+        langparagraph.textContent = "选择你的语言:";
+        rights.textContent = "ⓒ2023 索尔·赫什伯格；版权所有.";
+      } else {
+        radio.textContent = "Online Radio w/Saul H.";
+        songsone.textContent = "Music by Saul H.";
+        views.textContent = "Total Views For This Site:";
+        linksone.textContent = "Links And More";
+        one.textContent = "Saul H. - Spotify Artist Profile";
+        two.textContent = "Saul H. - Spotify Profile";
+        three.textContent = "Saul H. - Pulse Music";
+        four.textContent = "Pulse Thread - Saul H.'s Top 20";
+        five.textContent = "Pulse Thread - Saul H.'s Spotify Playlists";
+        six.textContent = "Crownnote - Saul H.'s Top 20 (Current Estimates)";
+        seven.textContent = "Going About Life In A Society Where Whippersnappers Are The Most Prominent Individuals";
+        eight.textContent = "2023 Poem Archives";
+        twentyseven.textContent = "2017 - Saul H.'s Top Songs";
+        twentyeight.textContent = "2018 - Saul H.'s Top Songs";
+        twentynine.textContent = "2019 - Saul H.'s Top Songs";
+        twentyten.textContent = "2010's - Saul H.'s Top Songs";
+        twenty.textContent = "2020 - Saul H.'s Top Songs";
+        twentyone.textContent = "2021 - Saul H.'s Top Songs";
+        twentytwo.textContent = "2022 - Saul H.'s Top Songs";
+        langparagraph.textContent = "Choose Your Language:";
+        rights.textContent = "ⓒ2023 by Saul Hirshberg; All rights reserved.";
+      }
+    }
+    submitone.addEventListener("click", coolL);
+</script>
 </body>
 </html>
   
