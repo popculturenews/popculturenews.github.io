@@ -95,11 +95,13 @@
     </select>
     <br>
     <br>
+    //Submitone is referred to in addEventListener in function.
     <input id="submitone" type="submit" value="Submit">
   </div>
   <br>
     <p id="allrightsreserved">Copyright 2023; All Rights Reserved.</p>
   <script>
+    //Function is conducted to translate - precisely when submitone is clicked; in addEventListener.
     document.getElementById("submitone").addEventListener("click", function () {
       var lang = document.getElementById("lang").value;
       var radio = document.getElementById("radio");
@@ -122,7 +124,7 @@
       var twenty22 = document.getElementById("2022");
       var twenty23 = document.getElementById("2023");
       var allRightsReserved = document.getElementById("allrightsreserved");
-
+//Atop: Change textContent of everything if language is english.
       if (lang === "en") {
         radio.textContent = "Online Radio w/Saul H.";
         songsOne.textContent = "Music by Saul H.";
@@ -144,6 +146,7 @@
         twenty22.textContent = "2022 - Saul H.'s Top Songs";
         twenty23.textContent = "2023 - Saul H.'s Top Songs";
         allRightsReserved.textContent = "© 2023 All Rights Reserved.";
+        //Else statement for spanish.
       } else if (lang === "es") {
         radio.textContent = "Radio en Línea con Saul H.";
         songsOne.textContent = "Música de Saul H.";
@@ -165,6 +168,7 @@
         twenty22.textContent = "2022";
         twenty23.textContent = "2023";
         allRightsReserved.textContent = "© 2023 Todos los derechos reservados.";
+        //Else statement for mandarin.
       } else if (lang === "zh") {
         radio.textContent = "Saul H. 的在线广播";
         songsOne.textContent = "Saul H. 的音乐";
