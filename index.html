@@ -88,7 +88,6 @@
     //Function is conducted to translate - precisely when submitone is clicked; in addEventListener.
     document.getElementById("submitone").addEventListener("click", function () {
       var lang = document.getElementById("lang").value;
-      var radio = document.getElementById("radio");
       var songsOne = document.getElementById("songsone");
       var views = document.getElementById("views");
       var linksOne = document.getElementById("linksone");
@@ -110,7 +109,6 @@
       var allRightsReserved = document.getElementById("allrightsreserved");
 //Atop: Change textContent of everything if language is english.
       if (lang === "en") {
-        radio.textContent = "Online Radio w/Saul H.";
         songsOne.textContent = "Music by Saul H.";
         views.textContent = "Total Views For This Site:";
         linksOne.textContent = "Links And More";
@@ -126,8 +124,6 @@
         nine.textContent = "Gif Pronunciation Guide";
         allRightsReserved.textContent = "© 2023 All Rights Reserved.";
         //Else statement for spanish.
-      } else if (lang === "es") {
-        radio.textContent = "Radio en Línea con Saul H.";
         songsOne.textContent = "Música de Saul H.";
         views.textContent = "Vistas totales de este sitio:";
         linksOne.textContent = "Enlaces y más";
@@ -144,7 +140,6 @@
         allRightsReserved.textContent = "© 2023 Todos los derechos reservados.";
         //Else statement for mandarin.
       } else if (lang === "zh") {
-        radio.textContent = "Saul H. 的在线广播";
         songsOne.textContent = "Saul H. 的音乐";
         views.textContent = "本站总访问量：";
         linksOne.textContent = "链接和更多";
